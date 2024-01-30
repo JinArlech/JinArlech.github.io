@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="script.js"></script>
-  <title></title>
+  <title>Market</title>
 </head>
 <body class="bg-black font-Inter">
   <!-- Header mulai -->
@@ -20,262 +20,1058 @@
       <ul class="flex font-medium justify-center text-white sm:flex sm:p-3 sm:justify-center sm:text-white sm:font-bold md:text-center md:flex md:font-medium md:justify-between md:text-2xl md:mx-auto lg:mx-auto lg:duration-1000 lg:my-auto lg:transition-colors 2xl:my-auto">
         <li><a href="index.html" class="ml-2 mr-2 sm:ml-2 sm:mr-2 md:my-auto md:justify-between lg:my-auto lg:hover:text-red-800 transition-colors duration-500">Home</a></li>
         <li><a href="market.html" class="mr-2 sm:ml-2 sm:mr-2 md:my-auto lg:justify-between lg:my-auto lg:hover:text-red-800 lg:transition-colors lg:duration-500 xl:hover:text-red-800 xl:transition-colors xl:duration-500 hover:text-red-800 transition-colors duration-500">Market</a></li>
-        <li><a href="#" class="mr-2 sm:ml-2 sm:mr-2 md:my-auto lg:justify-between lg:my-auto lg:hover:text-red-800 lg:transition-colors lg:duration-500 xl:hover:text-red-800 xl:transition-colors xl:duration-500 hover:text-red-800 transition-colors duration-500" >Contributor</a></li>
+        <li><a href="contributor.html" class="mr-2 sm:ml-2 sm:mr-2 md:my-auto lg:justify-between lg:my-auto lg:hover:text-red-800 lg:transition-colors lg:duration-500 xl:hover:text-red-800 xl:transition-colors xl:duration-500 hover:text-red-800 transition-colors duration-500" >Contributor</a></li>
       </ul>
     </nav>
   </header>
 <!-- End of  Navigation Bar -->
   <h1 class="text-slate-50 text-xl text-center my-5 font-semibold sm:text-slate-50 sm:text-center sm:text-2xl sm:my-5 sm:font-semibold md:text-6xl md:text-center md:my-5 md:text-slate-100 md:font-bold lg:text-6xl lg:text-center lg:my-5 lg:text-slate-100 lg:font-bold  xl:text-6xl xl:text-center xl:my-5 xl:text-slate-100 xl:font-bold  2xl:text-6xl 2xl:text-center 2xl:my-5 2xl:text-slate-100 2xl:font-bold">Market</h1>
 
-  <div class="container justify-centermx-auto sm:container sm:justify-center sm:mx-auto md:container md:justify-center md:mx-auto lg:container lg:justify-center lg:mx-auto">
-    <div class="m-3 grid-cols-2 gap-5 sm:m-3 sm:grid-cols-2 sm:gap-5 md:grid md:grid-cols-3 md:gap-y-5 md:gap-x-5 lg:gap-y-1 lg:gap-x-5 lg:grid-cols-5 xl:grid-cols-6 xl:gap-5 2xl:grid-cols-6">
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-10">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+  <select id="kategori" class="bg-black text-white text-center">
+    <option value="all">All</option>
+    <option value="heavy-gun">Heavy Gun</option>
+    <option value="pistol">Pistol</option>
+    <option value="revolver">Revolver</option>
+    <option value="semi-auto">Semi Auto</option>
+    <option value="rpg">RPG</option>
+  </select>
+  
+  <div id="produkContainer" class="mx-auto my-auto container justify-center">
+    <div class="grid grid-cols-7 mx-5 gap-5">
+      <!-- product-1 -->
+      <div id="heavy-gun" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:text-white sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg md:h-auto lg:h-auto xl:h-auto md:inline-block ">
+        <img src="https://images.guns.com/prod/642230257054_1.jpg?imwidth=1200" alt="HECKLER & KOCH HK416" class="rounded-lg max-w-180">
+        <h1 class="font-bold">HECKLER & KOCH HK416</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Heavy Gun</h2>
+        <p class="my-5">$505.99</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/glock-17.png" alt="Glock-17" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">Glock-17</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Semi Auto</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <!-- product-2 -->
+      <div id="heavy-gun" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="FN FN-15 SRP G2" class="rounded-lg max-w-180">
+        <h1 class="font-bold">FN FN-15 SRP G2</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Heavy Gun</h2>
+        <p class="my-5">$899.99</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto"><a href="https://onestrikemall.co.id/semua-produk/airsoft/type/submachine-gun/cybergun-fn-p90-gbb-black-fn-herstal-licensed/">Buy</button></a>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="../images/ak-47.png" alt="AK-47" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-14">AK-47</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Assault Rifle</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$569,46</p>
+      <!-- product-3 -->
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="../images/glock-17.png" alt="glock-17" class="rounded-lg max-w-180">
+        <h1 class="font-bold">Glock 17</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <!-- product-4 -->
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2022/03/14/622fb2ed519d3b4e17808540320275c010014df816e53.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">CENTURY ARMS VSKA</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$311.89</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <!-- product-5 -->
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2022/04/04/58-CMR-BH-2001804-1.jpg?imwidth=1200" alt="POF CMR" class="rounded-lg max-w-180">
+        <h1 class="font-bold">POF CMR</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$759.99</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <!-- product-6 -->
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/05/31/58-NIGHTHAWK%20CUSTOM%20VIP-NCP33785-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">NIGHTHAWK CUSTOM VIP</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$8,999.99</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <!-- product-7 -->
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
-      <div class="text-center rounded-lg sm:w-fit bg-gray-800 mt-5 p-5 sm:text-left sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow   md:inline-block sm:container md:w-fit">
-        <img src="/images/fn-90.png" alt="FN-P-90" width="240" class="mx-auto">
-        <h1 class="text-white font-bold text-3xl mt-3">FN-P-90</h1>
-        <h2 class="text-slate-500 font-bold text-xl">Submachine gun</h2>
-        <br><br>
-        <p class="text-slate-50 font-light text-sm">$887,47</p>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
       </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <div id="semi-auto" class="product-container text-center rounded-lg text-white bg-gray-800 mt-5 p-5 sm:text-center sm:bg-gray-800 sm:mt-5 sm:p-5 sm:border-slate-700 sm:rounded-lg glow md:h-auto lg:h-auto xl:h-auto md:inline-block">
+        <img src="https://images.guns.com/prod/2023/08/23/58-KIMBER%20RAPIDE-KF72439-1.jpg?imwidth=1200" alt="ak-47" class="rounded-lg max-w-180">
+        <h1 class="font-bold">KIMBER RAPIDE</h1>
+        <h2 class="text-slate-600 font-semibold -my-2">Semi Auto</h2>
+        <p class="my-5">$31189</p>
+        <button class="bg-red-700 rounded-lg w-20 font-bold mx-auto my-auto ">Buy</button>
+      </div>
+      <!-- Add similar div elements for other categories -->
     </div>
   </div>
 
+  
+  <footer class="">
+    <div class="container mx-auto">
+      <div class="text-center">
+        <h1 class="text-2xl text-white font-bold">Gunslayer</h1>
+        <p class="text-slate-700 text-xl font-semibold">Face Off</p>
+        <a href="https://twitter.com"><img src="../images/twitter-alt.svg" alt="twitter" width="24" class="mx-auto block my-3"></a>
+        <a href="https://youtube.com"><img src="../images/youtube.svg" alt="youtube" width="24" class="mx-auto my-3"></a>
+        <a href="https://instagram.com"><img src="../images/instagram.svg" alt="instagram" width="24" class="mx-auto my-3"></a>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <script>
+    const products = [
+      { id: 1, name: "Produk 1", kategori: "heavy-gun" },
+      { id: 2, name: "Produk 2", kategori: "pistol" },
+      { id: 3, name: "Produk 3", kategori: "revolver" },
+      { id: 4, name: "Produk 4", kategori: "semi-auto" },
+      { id: 5, name: "Produk 5", kategori: "rpg" },
+    ];
+  
+    const selectKategori = document.querySelector("#kategori");
+    const produkContainer = document.querySelector("#produkContainer");
+  
+    selectKategori.addEventListener("change", () => {
+      const kategori = selectKategori.value;
+  
+      const filteredProducts = products.filter((product) => {
+        return kategori === "all" || product.kategori === kategori;
+      });
+  
+      filteredProducts.sort((a, b) => a.id - b.id);
+  
+      // Toggle visibility based on the selected category
+      produkContainer.querySelectorAll(".product-container").forEach((productDiv) => {
+        const isVisible = productDiv.id === kategori || kategori === "all";
+        productDiv.style.display = isVisible ? "block" : "none";
+      });
+    });
+  </script>
 </body>
 </html>

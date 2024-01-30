@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          'Inter': ['Inter'],
+        },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          screen: {
+            'hd': '1080px',
+            '2k': '2560px',
+          },
+        }
+      }
+    }
+  </script>
+
+  <title>Document</title>
+  <style>
+    .glow:hover {
+      box-shadow: 0 10px 25px rgba(255, 0, 0, 0.8);
+      transition: box-shadow 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-black font-Inter">
+  <!-- Header mulai -->
+  <header class="sm:flex sm:flex-col sm:max-w-sm sm:mx-auto sm:my-auto md:max-w-md md: md:flex-col md:my-auto lg:max-w-screen-lg lg:flex-row xl:max-w-screen-xl md:justify-items-start 2xl:max-w-screen-2xl 2xl:justify-between">
+    <h1 class="text-center font-semibold text-2xl sm:text-3xl text-white sm:font-semibold sm:mx-auto sm:my-auto sm:text-between md:text-5xl md:mx-auto md:my-auto md:p-3 lg:text-6xl lg:mx-auto lg:my-auto xl:text-7xl xl:mx-auto xl:my-auto xl:justify-between xl:text-center "><span class="text-red-700 hover:text-white transition-colors duration-500">Gun</span><span class="hover:text-red-700 transition-colors duration-500">slayer</span></h1>
+    <!-- Navigation Bar -->
+    <nav class="md:mx-auto md:my-auto lg:mx-auto lg:my-auto xl:flex xl:ml-auto xl:mr-auto 2xl:mr-auto 2xl:ml-auto 2xl:flex 2xl:my-auto">
+      <ul class="flex font-medium justify-center text-white sm:flex sm:p-3 sm:justify-center sm:text-white sm:font-bold md:text-center md:flex md:font-medium md:justify-between md:text-2xl md:mx-auto lg:mx-auto lg:duration-1000 lg:my-auto lg:transition-colors 2xl:my-auto">
+        <li><a href="index.html" class="ml-2 mr-2 sm:ml-2 sm:mr-2 md:my-auto md:justify-between lg:my-auto lg:hover:text-red-800 transition-colors duration-500">Home</a></li>
+        <li><a href="market.html" class="mr-2 sm:ml-2 sm:mr-2 md:my-auto lg:justify-between lg:my-auto lg:hover:text-red-800 lg:transition-colors lg:duration-500 xl:hover:text-red-800 xl:transition-colors xl:duration-500 hover:text-red-800 transition-colors duration-500">Market</a></li>
+        <li><a href="contributor.html" class="mr-2 sm:ml-2 sm:mr-2 md:my-auto lg:justify-between lg:my-auto lg:hover:text-red-800 lg:transition-colors lg:duration-500 xl:hover:text-red-800 xl:transition-colors xl:duration-500 hover:text-red-800 transition-colors duration-500" >Contributor</a></li>
+      </ul>
+    </nav>
+    <!-- End of  Navigation Bar -->
+  </header>
+  <!-- Header Berakhir -->
+<body>
+  
+
+  <footer>
+    <div class="container justify-center mx-auto">
+      <div class="text-center">
+        <h1 class="text-2xl text-white font-bold">Gunslayer</h1>
+        <p class="text-slate-700 text-xl font-semibold">Face Off</p>
+        <a href="https://twitter.com"><img src="../images/twitter-alt.svg" alt="twitter" width="24" class="mx-auto block my-3"></a>
+        <a href="https://youtube.com"><img src="../images/youtube.svg" alt="youtube" width="24" class="mx-auto my-3"></a>
+        <a href="https://instagram.com"><img src="../images/instagram.svg" alt="instagram" width="24" class="mx-auto my-3"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
